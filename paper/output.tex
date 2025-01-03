@@ -1,0 +1,85 @@
+\documentclass[11pt]{article}
+\usepackage[square,numbers]{natbib}
+\bibliographystyle{abbrvnat}
+
+% Set margins
+\usepackage[margin=2.5cm]{geometry}
+
+% Use Times New Roman or equivalent
+\usepackage{mathptmx} % Times New Roman font for text and math
+
+% Set PDF output properties
+\usepackage{hyperref} % Optional, for clickable links in the PDF
+\hypersetup{
+    pdfauthor={Dylan Massey}, % Replace with your name
+    pdftitle={GNN-based Dialogical Argument Mining}, % Replace with your report title
+    pdfsubject={Natural Language Processing}, % Optional, replace with your subject
+    pdfkeywords={Argument Mining, Machine Learning, Graph Neural Networks} % Optional, add relevant keywords
+}
+
+% Optional: Title setup
+\title{GNN-based Dialogical Argument Mining: A First Step} % Replace with your title
+\author{Dylan Massey} % Replace with your name
+\date{\today} % You can replace \today with a specific date if needed
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Your abstract goes here. Briefly summarize the content of the report.
+\end{abstract}
+
+\section{Introduction}
+
+Argument Mining (AM) has established itself as a vital area of research in NLP \citep{stede_argumentation_2019}. Canonically, the task consists of identifying arguments as constellations of propositions, that is: Identifying the propositional content of natural language expressions and subsequently labelling the propositions as being either premise or conclusion (claim) for the a given argument \citep{stede_argumentation_2019}. Further, one is tasked with establishing semantic relations among these propositions. Relations among propositions give rise to argument structures that are \textit{convergent, serial, linked or divergent}\citep{lawrence_argument_2019}. A serial argument, for example, is a chain of propositions where each proposition\footnote{except for the first, which could be considered the \textit{main conclusion}} supports the one that it ``links to". In other cases a proposition might attack another one, only for it to be refuted by a further statement. \\
+While considerable efforts have been devoted towards AM on monological argumentative text in written form, \citet{ruiz-dolz_overview_2024} call for attention towards AM of dialogical, spoken data. They organise the \textit{First Task on Dialogical Argument} mining and invite participants to submit AM systems capable classifying relations between propositions, as well as grounding these propositions in locutions through illocutionary force relations, as we discuss in more detail in section \ref{sect:background}. \\
+A review of participant contributions allows us to conclude that most systems frame the dialogical argument mining task as a relation identification and classification task. By linearising neighbouring node texts and encoding the text with special tokens the winning team, \citet{binder_dfki-mlst_2024}, achieves 78.78\% on general relation identification between propositional nodes and 55.33\% is achieved in the identification of relations that hold between propositions and their locutionary counterparts. \\
+Since the task dataset, compiled by \citet{hautli-janisz_qt30_2022} is graph-structured, in the present paper I ask: Is a GNN-approach, that is, one that is architecturally more assimilated to the task dataset, a viable architecture for the task of dialogical AM?
+
+My main contributions are:
+\begin{enumerate}
+    \item 
+\end{enumerate}
+
+\section{Background}
+\label{sect:background}
+
+\paragraph{Argumentation Mining}
+
+\paragraph{Relation Extraction}
+
+\paragraph{Graph Neural Networks}
+
+This is where the main content of your report goes.
+
+\section{Method}
+
+\paragraph{Task.}
+
+\paragraph{Evaluation.} CASS-method, we focus on the general score here.
+
+\paragraph{Architecture of the NN.}...
+
+\paragraph{Normalisation.}
+
+\paragraph{Data Balancing.}
+
+\section{Results \& Discussion}
+
+\section{Conclusion}
+
+% Similarity to discourse graphs
+% https://research.protocol.ai/blog/2023/discourse-graphs-and-the-future-of-science/
+
+
+Your conclusion goes here. Let's reference someone.
+
+% Bibliography (if needed)
+%\begin{thebibliography}{9}
+%\bibitem{ref1} Author, \textit{Title}, Publisher, Year.
+%\end{thebibliography}
+
+\bibliography{references}
+
+\end{document}
