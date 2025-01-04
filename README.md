@@ -48,6 +48,26 @@ unzip test-data.zip -d ./data/qt-30/test
 mv ./data/qt-30/test/test/* ./data/qt-30/test
 ```
 
+After downloading and placing the data at the right place, we start by preprocessing it (this includes the **nodeset normalisation** process)
+
+```
+python prepare_data.py
+```
+
+Then train the model by running:
+
+```
+python train_gnn.py [--debug]
+```
+
+The additional `--debug` mode will only train on 10 nodesets instead of all nodesets.
+
+```
+python evaluate.py
+```
+
+The `evaluate.py` script will run the generated model on the test-set (found in `./data/qt-30/test`). The nodesets within that folder can arbitrarily replaced with nodesets adhering to the Argument-Interchange Format.
+
 ## References
 
 [DFKI-MLST at DialAM-2024 Shared Task: System Description](https://aclanthology.org/2024.argmining-1.9/) (Binder et al., ArgMining 2024)
