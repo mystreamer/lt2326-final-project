@@ -1,6 +1,6 @@
-torch
-transformers
 sentence-transformers
-textdistance
-pyrootutils
 torch-geometric
+textdistance
+transformers
+pyrootutils
+torch

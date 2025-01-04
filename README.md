@@ -35,4 +35,4 @@ source /scratch/gusmasdy/envs/ari/bin/activate
 
 [DFKI-MLST at DialAM-2024 Shared Task: System Description](https://aclanthology.org/2024.argmining-1.9/) (Binder et al., ArgMining 2024)
 
-*[QT30: A Corpus of Argument and Conflict in Broadcast Debate](https://aclanthology.org/2022.lrec-1.352/) (Hautli-Janisz et al., LREC 2022)*
+[QT30: A Corpus of Argument and Conflict in Broadcast Debate](https://aclanthology.org/2022.lrec-1.352/) (Hautli-Janisz et al., LREC 2022)
