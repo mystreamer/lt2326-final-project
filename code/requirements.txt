@@ -1,6 +1,8 @@
 sentence-transformers
 torch-geometric
+sentencepiece
 textdistance
 transformers
 pyrootutils
+protobuf
 torch

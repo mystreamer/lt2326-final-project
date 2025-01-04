@@ -31,6 +31,23 @@ If it is already installed we can just use:
 source /scratch/gusmasdy/envs/ari/bin/activate
 ```
 
+Download the datasets:
+
+Train:
+```
+mkdir ./data/qt-30
+wget http://dialam.arg.tech/res/files/dataset.zip
+unzip dataset.zip -d ./data/qt-30/train
+mv ./data/qt-30/train/dataset/* ./data/qt-30/train
+```
+
+Test (which we'll use as eval):
+```
+wget http://dialam.arg.tech/res/files/test-data.zip
+unzip test-data.zip -d ./data/qt-30/test
+mv ./data/qt-30/test/test/* ./data/qt-30/test
+```
+
 ## References
 
 [DFKI-MLST at DialAM-2024 Shared Task: System Description](https://aclanthology.org/2024.argmining-1.9/) (Binder et al., ArgMining 2024)
