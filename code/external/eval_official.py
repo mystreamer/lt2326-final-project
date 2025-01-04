@@ -13,7 +13,7 @@ from typing import Any, Dict, List, Optional, Union
 from sklearn.metrics import precision_recall_fscore_support
 
 
-from nodeset_utils import Nodeset, process_all_nodesets, read_nodeset
+from external.nodeset_utils import Nodeset, process_all_nodesets, read_nodeset
 
 logger = logging.getLogger(__name__)
 

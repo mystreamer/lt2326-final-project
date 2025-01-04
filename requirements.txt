@@ -1,4 +1,6 @@
+torch
 transformers
 sentence-transformers
 textdistance
 pyrootutils
+torch-geometric

@@ -5,7 +5,7 @@ if __name__ == "__main__":
         input_dir="./data/qt-30/train",
         output_dir="./data/normalised",
         integrate_gold_data=True, # Only in the case of evlauation
-        nodeset_id=17918,
+        nodeset_id=None,
         nodeset_blacklist=None,
         nodeset_whitelist=None,
         s_node_type="RA",
