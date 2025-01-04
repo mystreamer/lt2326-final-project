@@ -157,12 +157,12 @@ if __name__ == "__main__":
     # eval arguments
     eval_off(
         predictions_dir="./data/denormalised_eval",
-        gold_dir="./data/evaluation_data",
+        gold_dir="./data/qt-30/test",
         mode="arguments"
     )
     # eval arguments
     eval_off(
         predictions_dir="./data/denormalised_eval",
-        gold_dir="./data/evaluation_data",
+        gold_dir="./data/qt-30/test",
         mode="illocutions"
     )
