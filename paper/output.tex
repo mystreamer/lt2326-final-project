@@ -39,23 +39,38 @@ Since the task dataset, compiled by \citet{hautli-janisz_qt30_2022} is graph-str
 
 My main contributions are:
 \begin{enumerate}
-    \item 
+    \item I am the first to my knowledge to conceptualise the dialogical argument mining (DialAM) task as a node prediction task.
+    \item I provide a first implementation of DialAM using PyTorch Geometric with an evaluation on the performance of the model. Initial results show the challenges of ``solving" the task with a GNN.
 \end{enumerate}
 
 \section{Background}
 \label{sect:background}
 
-\paragraph{Argumentation Mining}
+\paragraph{Argumentation Mining.} The field of argument mining is concerned with eliciting the argument structure of natural language text. This argument structure consists of propositions, which are the most basal units of argumentation along with the relations that hold between them. Such relations can either be \textit{supportive} or \textit{attacking}, or stand in a neutral constellation towards eachother. 
 
-\paragraph{Relation Extraction}
+Traditionally the AM task comprises of four subtasks ad detailed in \citet{}
 
-\paragraph{Graph Neural Networks}
+There are various types of argument-structures, ... 
 
-This is where the main content of your report goes.
+Additionaly arguments can occur in monological as well as dialogical text.
 
-\section{Method}
+\paragraph{Towards larger structures.}
 
-\paragraph{Task.}
+\paragraph{Relation Extraction.} A often chosen approach to argument mining is to frame the task as a relation extraction problem with preceeding a preceding entity detection step. In the AM setting, the goal would then be to first identify the propositional elements of a text and then to to identify pairs of propositions in the text and classify the relation holding between the two. \\
+
+Since arguments can also be seen as a form of dependency structures, research has been carried out of applying dependency parsing models to the AM task. For example, \citet{ye_end--end_2021} frame the task of argument mining as, (a) a biaffine dependency parsing problem and attempt to solve all four subtasks of of argument mining through a single model end-to-end. 
+
+\paragraph{Graph Neural Networks.} Graph neural networks are a relatively novel technology that has been shown to be effective in a variety of tasks, including node classification, link prediction, and graph classification. 
+The basic idea is to learn a representation of each node in the graph by aggregating information from its neighbors. 
+This is done by passing messages between nodes in the graph, updating each node's representation based on the messages it receives. 
+The process is typically repeated for a fixed number of steps, allowing each node to gather information from nodes at varying distances in the graph. 
+The final node representations can then be used for downstream tasks such as node classification.  
+
+\section{Method. (1.5p.)}
+
+To give a relatively concise overview what I attempted, I start with giving a formal definition of the task and then proceed to describe the architecture of the graph neural network that was implemented.
+
+\paragraph{Formal Task Definition.} 
 
 \paragraph{Evaluation.} CASS-method, we focus on the general score here.
 
@@ -65,9 +80,9 @@ This is where the main content of your report goes.
 
 \paragraph{Data Balancing.}
 
-\section{Results \& Discussion}
+\section{Results \& Discussion (1p.)}
 
-\section{Conclusion}
+\section{Conclusion (0.5p.)}
 
 % Similarity to discourse graphs
 % https://research.protocol.ai/blog/2023/discourse-graphs-and-the-future-of-science/
@@ -80,6 +95,6 @@ Your conclusion goes here. Let's reference someone.
 %\bibitem{ref1} Author, \textit{Title}, Publisher, Year.
 %\end{thebibliography}
 
-\bibliography{references}
+\bibliography{references_synced}
 
 \end{document}
