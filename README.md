@@ -63,10 +63,12 @@ python train_gnn.py [--debug]
 The additional `--debug` mode will only train on 10 nodesets instead of all nodesets.
 
 ```
-python evaluate.py
+python evaluate.py [--debug]
 ```
 
 The `evaluate.py` script will run the generated model on the test-set (found in `./data/qt-30/test`). The nodesets within that folder can arbitrarily replaced with nodesets adhering to the Argument-Interchange Format.
+
+In the evaluate script the additional `--debug` will skip the model-inference on the data and will automatically perform evaluation (comparison) between the nodesets in the `./data/qt-30/test` folder and the nodessets in the `./data/denormalised_eval`.
 
 ## References
 
