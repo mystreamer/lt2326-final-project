@@ -4,5 +4,6 @@
 !figures/*
 !.gitignore
 !output.tex
+!output.pdf
 !references.bib
 !references_synced.bib
