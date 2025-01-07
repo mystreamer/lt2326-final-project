@@ -1,5 +1,7 @@
 *
 */
+!figures/
+!figures/*
 !.gitignore
 !output.tex
 !references.bib
