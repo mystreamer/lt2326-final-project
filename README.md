@@ -35,18 +35,12 @@ Download the datasets:
 
 Train:
 ```
-mkdir ./data/qt-30
 wget http://dialam.arg.tech/res/files/dataset.zip
 unzip dataset.zip -d ./data/qt-30/train
 mv ./data/qt-30/train/dataset/* ./data/qt-30/train
 ```
 
-Test (which we'll use as eval):
-```
-wget http://dialam.arg.tech/res/files/test-data.zip
-unzip test-data.zip -d ./data/qt-30/test
-mv ./data/qt-30/test/test/* ./data/qt-30/test
-```
+The test files are already uploaded to the repo.
 
 After downloading and placing the data at the right place, we start by preprocessing it (this includes the **nodeset normalisation** process)
 

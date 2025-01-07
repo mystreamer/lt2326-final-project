@@ -75,7 +75,7 @@ if __name__ == "__main__":
 
         # Pre-normalise the embeddings
         main(
-            input_dir="./data/qt-30/test",
+            input_dir="./data/qt-30/eval",
             output_dir="./data/normalised_eval",
             integrate_gold_data=False, # False in the case of evaluation
             nodeset_id=None,
@@ -157,12 +157,12 @@ if __name__ == "__main__":
     # eval arguments
     eval_off(
         predictions_dir="./data/denormalised_eval",
-        gold_dir="./data/qt-30/test",
+        gold_dir="./data/qt-30/eval",
         mode="arguments"
     )
     # eval arguments
     eval_off(
         predictions_dir="./data/denormalised_eval",
-        gold_dir="./data/qt-30/test",
+        gold_dir="./data/qt-30/eval",
         mode="illocutions"
     )

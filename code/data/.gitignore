@@ -1,3 +1,6 @@
 *
 */
 !.gitignore
+!qt-30
+!qt-30/eval
+!qt-30/eval/*
